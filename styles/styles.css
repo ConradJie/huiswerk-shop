@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,40 +12,180 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
-
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2, h3, h4 {
+    margin: 16px 0 0;
+    text-align: center;
+}
 
+a:-webkit-any-link {
+    color: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+details:hover {
+    cursor: pointer;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+}
 
+input,
+button {
+    font-family: inherit;
+    font-size: 8px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 16px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
-
+main {
+    max-width: 800px;
+    margin: 0 160px 0 160px;
+}
 
 /*///////////// 3.1 Header /////////////*/
+.header-section {
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 32px;
+    max-width: 1000px;
+    padding: 32px 0 220px 0;
+    text-align: center;
+}
 
+.header-section div {
+    margin-bottom: 24px;
+}
 
+.header-section input {
+    background-color: transparent;
+    border-color: #000000;
+    border-radius: 20px 0 0 20px;
+    padding: 12px;
+}
+
+.header-section input + button {
+    background-color: #000000;
+    border-radius: 0 20px 20px 0;
+    color: #FFFFFF;
+    margin-left: -3px;
+    padding: 12px;
+}
+
+.header-section ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    opacity: 1; /* Firefox */
+}
+
+.header-section :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+.header-section ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.quote-section {
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #899CA0;
+    margin: 32px 0;
+    padding: 30px 48px;
+    position: relative;
+}
 
+.quote-section > img {
+    display: inline-block;
+    left: 24px;
+    position: absolute;
+    vertical-align: top;
+    width: 16px;
+}
+
+.quote-section figcaption {
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: center;
+}
+
+.quote-section figure > img {
+    display: inline-block;
+    margin-top: 16px;
+    vertical-align: middle;
+    width: 44px;
+}
+
+.quote-section img + div {
+    display: inline-block;
+}
 
 /*///////////// 3.3 Support /////////////*/
+.support-section {
+    margin-bottom: 40px;
+}
 
+.support-section img {
+    border-radius: 8px;
+    margin-top: 32px;
+    max-width: 100%;
+}
 
+.support-section button {
+    background-color: #000000;
+    border-radius: 32px;
+    color: #FFFFFF;
+    padding: 12px 16px;
+}
+
+.support-section p {
+    margin: 8px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
+.faq-section h2 + details {
+    margin-top: 40px;
+}
 
-
+.faq-section details {
+    margin: 16px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: 32px;
+    max-width: 1000px;
+    padding: 16px;
+    text-align: center;
+}
